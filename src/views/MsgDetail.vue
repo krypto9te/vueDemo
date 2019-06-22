@@ -46,7 +46,7 @@
     },
 
     watch: {
-      $route: function(value){
+      $route: function(value){ //路由路径（param）发生改变
         const id = value.params.id*1
         this.msgDetail = this.allMsgDetail.find(detail => detail.id===id)
       }
